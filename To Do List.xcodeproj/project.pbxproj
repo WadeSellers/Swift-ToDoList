@@ -13,6 +13,8 @@
 		169712431C16969F00A8C17D /* To_Do_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 169712411C16969F00A8C17D /* To_Do_List.xcdatamodeld */; };
 		169712451C16969F00A8C17D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 169712441C16969F00A8C17D /* Assets.xcassets */; };
 		169712481C16969F00A8C17D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 169712461C16969F00A8C17D /* LaunchScreen.storyboard */; };
+		169712511C169FA400A8C17D /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1697124F1C169FA400A8C17D /* Item+CoreDataProperties.swift */; };
+		169712521C169FA400A8C17D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 169712501C169FA400A8C17D /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		169712441C16969F00A8C17D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		169712471C16969F00A8C17D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		169712491C16969F00A8C17D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1697124F1C169FA400A8C17D /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "../Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		169712501C169FA400A8C17D /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = ../Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		169712391C16969F00A8C17D /* To Do List */ = {
 			isa = PBXGroup;
 			children = (
+				1697124F1C169FA400A8C17D /* Item+CoreDataProperties.swift */,
+				169712501C169FA400A8C17D /* Item.swift */,
 				1697123A1C16969F00A8C17D /* AppDelegate.swift */,
 				1697123C1C16969F00A8C17D /* ViewController.swift */,
 				1697123E1C16969F00A8C17D /* Main.storyboard */,
@@ -138,8 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				169712521C169FA400A8C17D /* Item.swift in Sources */,
 				1697123D1C16969F00A8C17D /* ViewController.swift in Sources */,
 				169712431C16969F00A8C17D /* To_Do_List.xcdatamodeld in Sources */,
+				169712511C169FA400A8C17D /* Item+CoreDataProperties.swift in Sources */,
 				1697123B1C16969F00A8C17D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
