@@ -20,6 +20,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
+
+        let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        let request = NSFetchRequest(entityName: "Item")
+        var results : [AnyObject]?
+
+        do {
+            results = try context.executeFetchRequest(request)
+        } catch _ {
+            results = nil
+        }
+
+        if results != nil {
+            self.items = results as! [Item]
+            self.tableView.reloadData()
+        }
     }
 
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
