@@ -5,7 +5,6 @@
 //  Created by Wade Sellers on 12/7/15.
 //  Copyright © 2015 Apps by Wade. All rights reserved.
 //
-//Test
 
 import UIKit
 
